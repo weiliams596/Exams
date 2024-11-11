@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num1 = prompt("Enter first number:")
+        let num2 = prompt("Enter second number:")
+        let num3 = prompt("Enter third number:")
+        let min,max;
+        if(num1 > num2){
+            min = num2;
+            max = num1;
+            if(num3 >num1){
+                max=num3;
+            }
+            if(num3<num2){
+                min = num3;
+            }
+        }else if(num2 > num1){
+            min = num1;
+            max = num2;
+            if(num3 >num2){
+                max=num3;
+            }
+            if(num3<num1){
+                min = num3;
+            }
+        }
+        alert("The minimum number is:" + min + " and the maximum number is:" + max);
+        alert("The defference between the maximum and minimum number is:" + (max-min))
+    </script>
+</body>
+</html>
