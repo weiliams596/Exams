@@ -44,10 +44,7 @@ nextBtn.addEventListener("click", () => {
     if (data) {
         randomIndex();
         if (currentIndex < data.length - 1) {
-            console.log("Next button clicked!");
             newInfo.style.display = "block";
-            console.log(currentIndex);
-            console.log(data[currentIndex].title);
             newInfo.innerHTML = data[currentIndex].title;
         }
     }
