@@ -35,9 +35,7 @@ const fetchData = async () => {
 
 
 const randomIndex = () => {
-    let oldIndex = currentIndex;
-    while (oldIndex !== currentIndex)
-        currentIndex = parseInt((Math.random() * 100) % data.length);
+    currentIndex = parseInt((Math.random() * 100) % data.length);
 }
 
 nextBtn.addEventListener("click", () => {
